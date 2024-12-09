@@ -3,47 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadurp</title>
+    <title>CalculaDurp</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <header>
-        <section>
-            <div class="Logo">
-                <img src="" alt="">
-                <h1>CalculaDurp</h1>
-            </div>
-            <nav>
-                <a href="">Suma</a>
-                <a href="">Resta</a>
-                <a href="">Multiplicacion</a>
-                <a href="">Division</a>
-            </nav>
-        </section>
+    <header id="header">
+        <nav>
+            <button id="btn_sumaS" onclick="Suma()">Suma</button>
+            <button id="btn_restaR" onclick="Resta()">Resta</button>
+            <button id="btn_multiM" onclick="Multiplicacion()">Multiplicacion</button>
+            <button id="btn_DivisionD" onclick="Division()">Division</a>
+        </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <label>
-                    Num1:
-                </label>
-                <input type="number" name="" id="Num1">
+        <section class="Suma" id="Suma" >
+            <div class="Suma-Pregunta" id="Suma_Pregunta">
+                <div>
+                    <h3>Cuantos numeros quieres Sumar?</h3>
+                </div>
+                <div>
+                    <button id="QS_2" onclick="QS_2()">2</button>
+                    <button id="QS_3" onclick="QS_3()">3</button>
+                    <button id="QS_4" onclick="QS_4()">4</button>
+                    <button id="QS_5" onclick="QS_5()">5</button>
+                </div>
             </div>
-            <div>
-                <label>
-                    Num2:
-                </label>
-                <input type="number" name="" id="Num2">
+            <!--Cuando la suma es de dos numeros-->
+            <div class="Dos_numeros" id="Dos_numeros">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Sumar</button>
+                </div>
             </div>
-            <div >
-                <button onclick="Sumar()" id="Sumar">
-                    Sumar
-                </button>
+            <!--Cuando la suma es de tres numeros-->
+            <div class="Tres_numeros" id="Tres_numeros">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Sumar</button>
+                </div>
             </div>
-            <p id="Resultado" >
-                
-            </p>
+            <!--Cuando la suma es de cuatro numeros-->
+            <div class="cuatro_numeros" id="cuatro_numeros">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num4</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Sumar</button>
+                </div>
+            </div>
+            <!--Cuando la suma es de cinco numeros-->
+            <div class="cinco_numeros" id="cinco_numeros">
+                <div>
+                    <label for="">Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num4</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num5</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Sumar</button>
+                </div>
+            </div>
         </section>
+        <!--Resta-->
+        <section class="Resta" id="Resta"> 
+            <div class="Resta-pregunta">
+                <div>
+                    <h3>Cuantos numeros quieres Restar?</h3>
+                </div>
+                <div>
+                    <button id="QR_2" onclick="QR_2()">2</button>
+                    <button id="QR_3" onclick="QR_3()">3</button>
+                    <button id="QR_4" onclick="QR_4()">4</button>
+                    <button id="QR_5" onclick="QR_5()">5</button>
+                </div>
+            </div>
+            <!--Cuando la Resta es de dos numeros-->
+            <div class="Dos_numeros" id="Dos_numerosR">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Restar</button>
+                </div>
+            </div>
+            <!--Cuando la Resta es de tres numeros-->
+            <div class="Tres_numeros" id="Tres_numerosR">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Restar</button>
+                </div>
+            </div>
+            <!--Cuando la Resta es de cuatro numeros-->
+            <div class="cuatro_numeros" id="cuatro_numerosR">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num4</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Restar</button>
+                </div>
+            </div>
+            <!--Cuando la Resta es de cinco numeros-->
+            <div class="cinco_numeros" id="cinco_numerosR">
+                <div>
+                    <label for="">Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num4</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num5</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Restar</button>
+                </div>
+            </div>
+        </section>
+        <!--Multiplicacion-->
+        <section class="Multiplicacion" id="Multiplicacion">
+            <div class="Multiplicacion-pregunta">
+                <div>
+                    <h3>Cuantos numeros quieres Multiplicar?</h3>
+                </div>
+                <div>
+                    <button id="QM_2" onclick="QM_2()">2</button>
+                    <button id="QM_3" onclick="QM_3()">3</button>
+                    <button id="QM_4" onclick="QM_4()">4</button>
+                    <button id="QM_5" onclick="QM_5()">5</button>
+                </div>
+            </div>
+            <!--Cuando la multiplicacion es de dos numeros-->
+            <div class="Dos_numeros" id="Dos_numerosM">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Multiplicar</button>
+                </div>
+            </div>
+            <!--Cuando la multiplicacion es de tres numeros-->
+            <div class="Tres_numeros" id="Tres_numerosM">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Multiplicar</button>
+                </div>
+            </div>
+            <!--Cuando la multiplicacion es de cuatro numeros-->
+            <div class="cuatro_numeros" id="cuatro_numerosM">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num4</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Multiplicar</button>
+                </div>
+            </div>
+            <!--Cuando la multiplicacion es de cinco numeros-->
+            <div class="cinco_numeros" id="cinco_numerosM">
+                <div>
+                    <label for="">Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num4</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num5</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Multiplicar</button>
+                </div>
+            </div>
+        </section>
+        <!--Division-->
+        <Section class="Division" id="Division">
+            <div class="Division-pregunta">
+                <div>
+                    <h3>Cuantos numeros quieres Dividir?</h3>
+                </div>
+                <div>
+                    <button id="QM_2" onclick="QD_2()">2</button>
+                    <button id="QM_3" onclick="QD_3()">3</button>
+                    <button id="QM_4" onclick="QD_4()">4</button>
+                    <button id="QM_5" onclick="QD_5()">5</button>
+                </div>
+            </div>
+            <!--Cuando la division es de dos numeros-->
+            <div class="Dos_numeros" id="Dos_numerosD">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Dividir</button>
+                </div>
+            </div>
+            <!--Cuando la division es de tres numeros-->
+            <div class="Tres_numeros" id="Tres_numerosD">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Dividir</button>
+                </div>
+            </div>
+            <!--Cuando la division es de cuatro numeros-->
+            <div class="cuatro_numeros" id="cuatro_numerosD">
+                <div>
+                    <label>Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Num4</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Dividir</button>
+                </div>
+            </div>
+            <!--Cuando la division es de cinco numeros-->
+            <div class="cinco_numeros" id="cinco_numerosD">
+                <div>
+                    <label for="">Num1</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num2</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num3</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num4</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Num5</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button>Dividir</button>
+                </div>
+            </div>
+        </section>
+
+        </Section>
     </main>
-    <script src="suma.js"></script>
+    <script src="Script.js"></script>
 </body>
 </html>
