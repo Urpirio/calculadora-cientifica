@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalculaDurp</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -12,7 +15,7 @@
             <button id="btn_sumaS" onclick="Suma()">Suma</button>
             <button id="btn_restaR" onclick="Resta()">Resta</button>
             <button id="btn_multiM" onclick="Multiplicacion()">Multiplicacion</button>
-            <button id="btn_DivisionD" onclick="Division()">Division</a>
+            <button id="btn_DivisionD" onclick="Division()">Division</button>
         </nav>
     </header>
     <main>
@@ -32,81 +35,93 @@
             <div class="Dos_numeros" id="Dos_numeros">
                 <div>
                     <label>Num1</label>
-                    <input type="text">
+                    <input id="Num1" type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num2</label>
-                    <input type="text">
+                    <input id="Num2" type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
-                    <button>Sumar</button>
+                    <button  onclick="sumar()">Sumar</button>
                 </div>
+                <p>Resultado = <span id="Sumar"></span></p>
             </div>
             <!--Cuando la suma es de tres numeros-->
             <div class="Tres_numeros" id="Tres_numeros">
                 <div>
                     <label>Num1</label>
-                    <input type="text">
+                    <input id="Num11" type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num2</label>
-                    <input type="text">
+                    <input id="Num22" type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num3</label>
-                    <input type="text">
+                    <input id="Num33" type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
-                    <button>Sumar</button>
+                    <button onclick="Sumar1()">Sumar</button>
                 </div>
+                <p>Resultado = <span id="Sumar1"></span></p>
             </div>
             <!--Cuando la suma es de cuatro numeros-->
             <div class="cuatro_numeros" id="cuatro_numeros">
-                <div>
-                    <label>Num1</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label>Num1</label>
+                        <input id="Num111" type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label>Num2</label>
+                        <input id="Num222" type="text" placeholder="Ingrese un valor">
+                    </div>
+                </div>
+                <div class="Textbox">
+                    <div>
+                        <label>Num3</label>
+                        <input id="Num333" type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label>Num4</label>
+                        <input id="Num444" type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
                 <div>
-                    <label>Num2</label>
-                    <input type="text">
+                    <button onclick="Sumar2()">Sumar</button>
                 </div>
-                <div>
-                    <label>Num3</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Num4</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <button>Sumar</button>
-                </div>
+                <p>Resultado = <span id="Sumar2"></span></p>
             </div>
             <!--Cuando la suma es de cinco numeros-->
             <div class="cinco_numeros" id="cinco_numeros">
-                <div>
-                    <label for="">Num1</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label >Num1</label>
+                        <input id="Num1111" type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label >Num2</label>
+                        <input id="Num2222" type="text" placeholder="Ingrese un valor">
+                    </div>
+                </div>
+                <div class="Textbox">
+                    <div>
+                        <label >Num3</label>
+                        <input id="Num3333" type="text" placeholder="Ingrese un valor" v>
+                    </div>
+                    <div>
+                        <label >Num4</label>
+                        <input id="Num4444" type="text" placeholder="Ingrese un valor">
+                    </div>
+                </div>
+                <div class="Textbox5">
+                    <label>Num5</label>
+                    <input id="Num5555" type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
-                    <label for="">Num2</label>
-                    <input type="text">
+                    <button onclick="Sumar3()">Sumar</button>
                 </div>
-                <div>
-                    <label for="">Num3</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Num4</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Num5</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <button>Sumar</button>
-                </div>
+                <p>Resultado = <span id="Sumar3"></span></p>
             </div>
         </section>
         <!--Resta-->
@@ -124,14 +139,14 @@
             </div>
             <!--Cuando la Resta es de dos numeros-->
             <div class="Dos_numeros" id="Dos_numerosR">
-                <div>
-                    <label>Num1</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Num2</label>
-                    <input type="text">
-                </div>
+                    <div>
+                        <label>Num1</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label>Num2</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 <div>
                     <button>Restar</button>
                 </div>
@@ -140,15 +155,15 @@
             <div class="Tres_numeros" id="Tres_numerosR">
                 <div>
                     <label>Num1</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num2</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num3</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <button>Restar</button>
@@ -156,21 +171,25 @@
             </div>
             <!--Cuando la Resta es de cuatro numeros-->
             <div class="cuatro_numeros" id="cuatro_numerosR">
-                <div>
-                    <label>Num1</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label>Num1</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label>Num2</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
-                <div>
-                    <label>Num2</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Num3</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Num4</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label>Num3</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label>Num4</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
                 <div>
                     <button>Restar</button>
@@ -178,26 +197,30 @@
             </div>
             <!--Cuando la Resta es de cinco numeros-->
             <div class="cinco_numeros" id="cinco_numerosR">
-                <div>
-                    <label for="">Num1</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label for="">Num1</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label for="">Num2</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
-                <div>
-                    <label for="">Num2</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label for="">Num3</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label for="">Num4</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
-                <div>
-                    <label for="">Num3</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Num4</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Num5</label>
-                    <input type="text">
-                </div>
+                    <div class="Textbox5">
+                        <label for="">Num5</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 <div>
                     <button>Restar</button>
                 </div>
@@ -220,11 +243,11 @@
             <div class="Dos_numeros" id="Dos_numerosM">
                 <div>
                     <label>Num1</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num2</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <button>Multiplicar</button>
@@ -234,15 +257,15 @@
             <div class="Tres_numeros" id="Tres_numerosM">
                 <div>
                     <label>Num1</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num2</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num3</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <button>Multiplicar</button>
@@ -250,21 +273,25 @@
             </div>
             <!--Cuando la multiplicacion es de cuatro numeros-->
             <div class="cuatro_numeros" id="cuatro_numerosM">
-                <div>
-                    <label>Num1</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label>Num1</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label>Num2</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
-                <div>
-                    <label>Num2</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Num3</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Num4</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label>Num3</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label>Num4</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
                 <div>
                     <button>Multiplicar</button>
@@ -272,25 +299,29 @@
             </div>
             <!--Cuando la multiplicacion es de cinco numeros-->
             <div class="cinco_numeros" id="cinco_numerosM">
-                <div>
-                    <label for="">Num1</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label for="">Num1</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label for="">Num2</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
-                <div>
-                    <label for="">Num2</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label for="">Num3</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label for="">Num4</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
-                <div>
-                    <label for="">Num3</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Num4</label>
-                    <input type="text">
-                </div>
-                <div>
+                <div class="Textbox5">
                     <label for="">Num5</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <button>Multiplicar</button>
@@ -314,11 +345,11 @@
             <div class="Dos_numeros" id="Dos_numerosD">
                 <div>
                     <label>Num1</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num2</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <button>Dividir</button>
@@ -328,15 +359,15 @@
             <div class="Tres_numeros" id="Tres_numerosD">
                 <div>
                     <label>Num1</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num2</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <label>Num3</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <button>Dividir</button>
@@ -344,21 +375,25 @@
             </div>
             <!--Cuando la division es de cuatro numeros-->
             <div class="cuatro_numeros" id="cuatro_numerosD">
-                <div>
-                    <label>Num1</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label>Num1</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label>Num2</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
-                <div>
-                    <label>Num2</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Num3</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label>Num4</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label>Num3</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label>Num4</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
                 <div>
                     <button>Dividir</button>
@@ -366,25 +401,29 @@
             </div>
             <!--Cuando la division es de cinco numeros-->
             <div class="cinco_numeros" id="cinco_numerosD">
-                <div>
-                    <label for="">Num1</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label for="">Num1</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label for="">Num2</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
-                <div>
-                    <label for="">Num2</label>
-                    <input type="text">
+                <div class="Textbox">
+                    <div>
+                        <label for="">Num3</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
+                    <div>
+                        <label for="">Num4</label>
+                        <input type="text" placeholder="Ingrese un valor">
+                    </div>
                 </div>
-                <div>
-                    <label for="">Num3</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Num4</label>
-                    <input type="text">
-                </div>
-                <div>
+                <div class="Textbox5">
                     <label for="">Num5</label>
-                    <input type="text">
+                    <input type="text" placeholder="Ingrese un valor">
                 </div>
                 <div>
                     <button>Dividir</button>
