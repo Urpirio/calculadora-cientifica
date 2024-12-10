@@ -75,6 +75,7 @@ function sumar(){
     resulta = document.querySelector("#Sumar"); 
     return resulta.innerHTML = result;
 }
+//funcion que suma tres valores
 function Sumar1(){
     let Num1 = parseFloat(document.getElementById("Num11").value);
     let Num2 = parseFloat(document.getElementById("Num22").value);
@@ -83,6 +84,7 @@ function Sumar1(){
     resulta = document.querySelector("#Sumar1");
     return resulta.innerHTML = result;  
 }
+//funcion que suma cuatro valores
 function Sumar2(){
     let Num1 = parseFloat(document.getElementById("Num111").value);
     let Num2 = parseFloat(document.getElementById("Num222").value);
@@ -92,6 +94,7 @@ function Sumar2(){
     resulta = document.querySelector("#Sumar2");
     return resulta.innerHTML = result;
 }
+//funcion que suma cinco valores
 function Sumar3(){
     let Num1 = parseFloat(document.getElementById("Num1111").value);
     let Num2 = parseFloat(document.getElementById("Num2222").value);
@@ -171,6 +174,25 @@ function QR_5(){
     let cinco_numerosR = document.getElementById("cinco_numerosR");
     cinco_numerosR.style.display = "Flex";
 }
+//funcion para restar dos valores
+function Restar(){
+
+}
+//funcion para restar tres valores
+function Restar2(){
+
+}
+//Funcion para restar cuatro valores
+function Restar3(){
+
+}
+//funcion para restar cinco valores
+function Restar4(){
+
+}
+
+
+
 //funcion de multipicacion
 function Multiplicacion(){
     let Resta = document.getElementById("Resta");
@@ -241,6 +263,25 @@ function QM_5(){
     cinco_numerosR.style.display = "Flex";
 }
 
+//funcion para multiplicar dos valores
+function Multi(){
+
+}
+//funcion para multiplicar tres valores
+function Multi2(){
+
+}
+//funcion para multiplicar cuatro valores
+function Multi3(){
+
+}
+//funcion para multiplicar cinco valores
+function Multi4(){
+
+}
+
+
+
 //funcion de division
 function Division(){
     let Resta = document.getElementById("Resta");
@@ -300,4 +341,20 @@ function QD_5(){
     cuatro_numerosD.style.display ="none";
     let cinco_numerosD = document.getElementById("cinco_numerosD");
     cinco_numerosD.style.display = "Flex";
+}
+//funcion para dividir dos valores
+function Div(){
+
+}
+//funcion para dividir tres valores
+function Div2(){
+
+}
+//funcion para dividir cuatro valores
+function Div3(){
+
+}
+//funcion para dividir cinco valores
+function Div4(){
+
 }
