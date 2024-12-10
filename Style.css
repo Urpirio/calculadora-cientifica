@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  font-family: "Poppins", serif;
 }
 header{
     height: 1.5cm;
@@ -39,19 +40,53 @@ header nav button{
 .Suma .Dos_numeros{
     display: none;
     flex-direction: column;
-    
 }
+.Suma .Dos_numeros div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .Suma .Tres_numeros{
     display: none;
+    flex-direction: column;
+}
+.Suma .Tres_numeros div{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 .Suma .cuatro_numeros{
     display: none;
     flex-direction: column;
 }
+.Textbox{
+    display: flex;
+    justify-content: center;
+    
+}
+.Textbox div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Suma .cuatro_numeros div{
+    display: flex;
+    justify-content: center;
+}
 .Suma .cinco_numeros{
     display: none;
     flex-direction: column;
+}
+.Suma .cinco_numeros div{
+    display: flex;
+    justify-content: center;
+}
+.Textbox5{
+   flex-direction: column;
+   padding-left: 3cm;
+   padding-right: 3cm;
 }
 /*Resta*/
 .Resta{
@@ -60,9 +95,10 @@ header nav button{
     justify-content: center;
     align-items: center;
 }
+
 .Resta div{
-    margin-top: 10px;
-    margin-bottom: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 .Resta-pregunta{
     display: flex;
@@ -73,18 +109,38 @@ header nav button{
 .Resta .Dos_numeros{
     display: none;
     flex-direction: column;
+    
+}
+.Resta .Dos_numeros div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 .Resta .Tres_numeros{
     display: none;
     flex-direction: column;
 }
+.Resta .Tres_numeros div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .Resta .cuatro_numeros{
     display: none;
-    flex-direction: column;
+    flex-direction: column; 
+}
+.Resta .cuatro_numeros div{
+    display: flex;
+    justify-content: center;
 }
 .Resta .cinco_numeros{
     display: none;
     flex-direction: column;
+}
+.Resta .cinco_numeros div{
+    display: flex;
+    justify-content: center;
 }
 /*Multiplicacion*/
 .Multiplicacion{
@@ -107,17 +163,35 @@ header nav button{
     display: none;
     flex-direction: column;
 }
+.Multiplicacion .Dos_numeros div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .Multiplicacion .Tres_numeros{
     display: none;
+    flex-direction: column;
+}
+.Multiplicacion .Tres_numeros div{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 .Multiplicacion .cuatro_numeros{
     display: none;
     flex-direction: column;
 }
+.Multiplicacion .cuatro_numeros div{
+    display: flex;
+    justify-content: center;
+}
 .Multiplicacion .cinco_numeros{
     display: none;
     flex-direction: column;
+}
+.Multiplicacion .cinco_numeros div{
+    display: flex;
+    justify-content: center;
 }
 /*Division*/
 .Division{
@@ -141,15 +215,33 @@ header nav button{
     display: none;
     flex-direction: column;
 }
+.Division .Dos_numeros div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .Division .Tres_numeros{
     display: none;
+    flex-direction: column;
+}
+.Division .Tres_numeros div{
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 .Division .cuatro_numeros{
     display: none;
     flex-direction: column;
 }
+.Division .cuatro_numeros div{
+    display: flex;
+    justify-content: center;
+}
 .Division .cinco_numeros{
     display: none;
     flex-direction: column;
+}
+.Division .cinco_numeros div{
+    display: flex;
+    justify-content: center;
 }
